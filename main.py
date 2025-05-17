@@ -36,7 +36,7 @@ llm = AzureChatOpenAI(
 )
 
 tools = load_tools(["serpapi", "llm-math"], llm=llm)
-print("Loaded tools:", [tool.name for tool in tools])
+# print("Loaded tools:", [tool.name for tool in tools])
 
 # Build your graph nodes manually (e.g., a simple agent node)
 def agent_node_fn(inputs: QueryResults) -> QueryResults:
